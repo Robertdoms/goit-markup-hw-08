@@ -1,0 +1,101 @@
+.header .container {
+    display: flex;
+  }
+  .menu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    padding: 32p 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .menu-nav.list {
+    margin-left: 93px;
+    text-align: center;
+  }
+  .menu:hover .menu-link {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  .menu-link .item {
+    margin-right: 50px;
+  }
+  .menu-link .item:last-child {
+    margin-right: 0px;
+  }
+  .link .icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .menu-nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+    display: flex;
+  }
+
+  .menu-link.list {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  .menu-link .link:hover,
+  .menu-link .link:focus {
+    color: var(--accent-color);
+  }
+  .menu-nav .item {
+    margin-right: 50px;
+  }
+  .menu-nav .item:last-child {
+    margin-right: 0;
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+  }
+  .icon::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: "";
+  }
+  .link {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-link.list .item {
+    display: inline-block;
+    background-size: contain;
+    margin-right: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .menu-link.list .item:last-child {
+    margin-right: 0;
+  }
+  .link.current {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .current {
+    color: var(--accent-color);
+  }

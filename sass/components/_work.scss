@@ -1,0 +1,34 @@
+.work-list .work {
+  display: flex;
+  align-items: center;
+
+  &-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--hero-color);
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+&-list {
+  padding-top: 0;
+}
+& li {
+  margin-right: 30px;
+}
+& li:last-child {
+  margin-right: 0;
+}
+&-list {
+  position: relative;
+}
+
+}

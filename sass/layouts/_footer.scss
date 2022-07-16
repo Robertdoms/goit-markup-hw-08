@@ -1,0 +1,124 @@
+.footer-form-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--social);
+  margin-bottom: 20px;
+}
+.footer-form {
+  margin-left: auto;
+}
+.footer-form-icon {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.footer-form-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-color-form);
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  cursor: pointer;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-mail:hover,
+.footer-form-mail:focus {
+  border: 1px solid var(--social-icon-hover);
+  outline: none;
+}
+.footer-item-list {
+  margin-bottom: 9px;
+}
+.footer-item-list:last-child {
+  margin-bottom: 0;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--social);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social-link:focus,
+.footer-social-link:hover {
+  background-color: var(--social-icon-hover);
+}
+.footer-social-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--social);
+  margin-bottom: 20px;
+}
+.footer-social-list {
+  padding: 0;
+  display: flex;
+}
+.footer-social-item {
+  margin-right: 10px;
+}
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+.footer-dscr {
+  fill: currentColor;
+}
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+}
+address {
+  font-style: normal;
+  margin-top: 20px;
+}
+.address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.maps {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.dscr {
+  display: flex;
+  align-items: baseline;
+}

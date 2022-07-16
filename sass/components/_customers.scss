@@ -1,0 +1,32 @@
+.customers {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.customers:last-child {
+  margin-right: 0;
+}
+.customers-item-link:focus,
+.customers-item-link:hover {
+  border-color: var(--social-icon-hover);
+  color: var(--social-icon-hover);
+}
+.customers-list {
+  display: flex;
+}
+.customers-item-link {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--social-icon);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  color: var(--social-icon);
+  transition-property: border-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-icon {
+  fill: currentColor;
+}

@@ -1,0 +1,31 @@
+.filter-list .net {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+  border-top: none;
+}
+.filter-item {
+  margin-right: 8px;
+}
+.filter-item:last-child {
+  margin-right: 0;
+}
+.filter-list.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.filter .text {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  margin: 0;
+}

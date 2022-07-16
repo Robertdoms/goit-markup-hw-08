@@ -1,0 +1,25 @@
+.logo-header {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--title-text-color);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.logo-2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #ffffff;
+  margin-bottom: 20px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

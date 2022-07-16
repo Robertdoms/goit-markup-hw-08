@@ -1,0 +1,83 @@
+.teem {
+  background-color: #f5f4fa;
+}
+.teem-link {
+  display: block;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
+  }
+
+  &:hover .teem-dscr,
+&:focus .teem-dscr {
+  transform: translateY(0);
+}
+}
+
+.teem-overlay {
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+.teem-dscr {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+
+.teem-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--teem-set-gap));
+  margin-left: calc(-1 * var(--teem-set-gap));
+}
+.teem-list > .teem {
+  flex-basis: calc(100% / 3 - var(--teem-set-gap));
+  margin-bottom: var(--teem-set-gap);
+  margin-left: var(--teem-set-gap);
+}
+.team .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.team .text {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.net {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  border-top: none;
+}

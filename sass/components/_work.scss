@@ -18,17 +18,16 @@
     background-color: rgba(47, 48, 58, 0.8);
   }
 
-&-list {
+}
+.work-list {
   padding-top: 0;
 }
-& li {
+.work li {
   margin-right: 30px;
 }
-& li:last-child {
+.work li:last-child {
   margin-right: 0;
 }
-&-list {
+.work-list {
   position: relative;
-}
-
 }

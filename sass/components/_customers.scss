@@ -12,6 +12,7 @@
 }
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .customers-item-link {
   display: flex;

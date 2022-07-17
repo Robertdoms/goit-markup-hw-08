@@ -58,7 +58,7 @@
 }
 .checkbox-form {
   display: flex;
-  cursor: pointer;
+  cursor: pointer; 
 
   &:checked + .checkbox-icon {
     outline: 1px solid #188ce8;

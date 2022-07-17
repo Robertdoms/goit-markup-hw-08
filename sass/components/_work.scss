@@ -31,3 +31,9 @@
 .work-list {
   position: relative;
 }
+.work{
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

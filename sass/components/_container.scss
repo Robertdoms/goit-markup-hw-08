@@ -1,18 +1,17 @@
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1.5px solid violet;
 
-  @media screen and (min-width: 480px) {
-    width: 48opx;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }

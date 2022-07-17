@@ -7,9 +7,21 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.feature{
+.feature {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    .feature {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+  @media screen and (min-width: 1199px) {
+    .features-set {
+      margin: -15px;
+    }
+  }
 }
 .feature-list .text {
   color: var(--text-color);
@@ -26,6 +38,26 @@
 }
 .title-text {
   margin-right: 30px;
+
+  @media screen and (min-width: 768px) {
+    .title-text {
+      width: calc((100% - 4 * 5px) / 2);
+      margin: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 1199px) {
+    .title-text {
+      width: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .title-text:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }
 .title-text:last-child {
   margin-right: 0;

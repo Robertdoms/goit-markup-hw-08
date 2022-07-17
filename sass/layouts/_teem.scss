@@ -1,23 +1,18 @@
-.teem {
-  background-color: #f5f4fa;
-}
 .teem-link {
   display: block;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
-  }
-
-  &:hover .teem-dscr,
-&:focus .teem-dscr {
+}
+.teem-link:hover,
+.teem-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+.teem-link:hover .teem-dscr,
+.teem-link:focus .teem-dscr {
   transform: translateY(0);
 }
-}
-
 .teem-overlay {
   align-items: center;
   justify-content: center;
@@ -44,19 +39,53 @@
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-
 .teem-list {
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: calc(-1 * var(--teem-set-gap));
   margin-left: calc(-1 * var(--teem-set-gap));
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    .teem-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+  @media screen and (min-width: 1199px) {
+    .teem-list {
+      margin: -15px;
+    }
+  }
 }
 .teem-list > .teem {
   flex-basis: calc(100% / 3 - var(--teem-set-gap));
   margin-bottom: var(--teem-set-gap);
   margin-left: var(--teem-set-gap);
 }
+.teem {
+  background-color: #f5f4fa;
 
+  @media screen and (min-width: 768px) {
+    .teem {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+  }
+  
+  @media screen and (min-width: 1199px) {
+    .teem {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .teem:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
 .net {
   padding: 20px 24px;
   border: 1px solid #eeeeee;

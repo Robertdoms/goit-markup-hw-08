@@ -38,53 +38,34 @@
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-
-.teem-list {
-  margin-bottom: calc(-1 * var(--teem-set-gap));
-  margin-left: calc(-1 * var(--teem-set-gap));
-  display: flex;
-  flex-wrap: wrap;
-
-  @media screen and (min-width: 768px) {
-    .teem-list {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -15px;
-    }
-  }
-  @media screen and (min-width: 1199px) {
-    .teem-list {
-      margin: -15px;
-    }
-  }
-}
 .teem-list > .teem {
-  flex-basis: calc(100% / 3 - var(--teem-set-gap));
+  flex-basis: calc((100% - var(--item-teem) * var(--teem-set-gap)) / var(--teem-set-gap)) ;
   margin-bottom: var(--teem-set-gap);
   margin-left: var(--teem-set-gap);
 }
+.teem-list {
+  margin-bottom: calc(-1 * var(--teem-set-gap));
+  margin-left: calc(-1 * var(--teem-set-gap));
+  --item-teem: 1;
+  --teem-set-gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    --item-teem: 2;
+    --teem-set-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1199px) {
+    --item-teem: 3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .teem {
   background-color: #f5f4fa;
 
-  @media screen and (min-width: 768px) {
-    .teem {
-      width: calc((100% - 4 * 15px) / 2);
-      margin: 15px;
-    }
-  }
-  
-  @media screen and (min-width: 1199px) {
-    .teem {
-      width: calc((100% - 6 * 15px) / 3);
-      margin: 15px;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    .teem:not(:last-child) {
-      margin-bottom: 15px;
-    }
-  }
 }
 .net {
   padding: 20px 24px;

@@ -14,7 +14,6 @@
   &.is-open .icon-menu {
     display: none;
   }
-
 }
 .menu-container {
   display: block;
@@ -38,23 +37,49 @@
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.link-tel {
+.menu-mobils .menu {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #212121;
+  margin-bottom: 32px;
+
+  &:hover{
+    color: var(--social-icon-hover);
+  }
 }
-.link-mail {
+.menu-mobils-link .mobils{
+  text-align: left;
+  justify-content: center;
+
+}
+   
+.link-tel {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+
+  &:hover{
+    color: var(--social-icon-hover);
+}
+}
+.link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+  
+  &:hover{
+    color: var(--social-icon-hover);
+}
 }
 .menu-mobils {
   margin-bottom: 302px;
@@ -62,6 +87,6 @@
 .menu-mobils-link {
   margin-top: 64px;
 }
-.mobils-social{
+.mobils-social {
   display: flex;
 }

@@ -94,7 +94,7 @@ p {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -279,7 +279,6 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: calc(-1 * var(--teem-set-gap));
-  --teem-set-gap: 1;
 }
 @media screen and (min-width: 768px) {
   .childrens {
@@ -1525,25 +1524,50 @@ address {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.02em;
   color: #212121;
 }
 
+.menu-mobils .menu {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  margin-bottom: 32px;
+}
+.menu-mobils .menu:hover {
+  color: var(--social-icon-hover);
+}
+
+.menu-mobils-link .mobils {
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.link-tel:hover {
+  color: var(--social-icon-hover);
+}
+
+.link-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-.link-mail {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  color: #757575;
+.link-mail:hover {
+  color: var(--social-icon-hover);
 }
 
 .menu-mobils {

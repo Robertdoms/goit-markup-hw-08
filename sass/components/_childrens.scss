@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: calc(-1 * var(--teem-set-gap));
-  --teem-set-gap: 1;
 
   @media screen and (min-width: 768px) {
     --item-childrens: 2;
